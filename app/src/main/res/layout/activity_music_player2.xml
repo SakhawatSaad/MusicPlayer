@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MusicPlayerActivity2">
+
+
+
+    <ImageView
+        android:id="@+id/logoimg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintDimensionRatio="5:3"
+        android:scaleType="center"
+        android:src="@drawable/app_logo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/logoimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+
+            android:tag="play"
+            android:id="@+id/playbtn"
+            android:layout_weight="1"
+            android:src="@drawable/ic_play__24"
+            android:layout_width="0dp"
+            android:layout_height="80dp"/>
+        <ImageView
+
+            android:id="@+id/stopbtn"
+            android:layout_weight="1"
+            android:src="@drawable/ic_stop_24"
+            android:layout_width="0dp"
+            android:layout_height="80dp"/>
+
+        <ImageView
+
+            android:id="@+id/nextbtn"
+            android:layout_weight="1"
+            android:src="@drawable/ic_next_24"
+            android:layout_width="0dp"
+            android:layout_height="80dp"/>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
